@@ -1,4 +1,4 @@
-body {
+body .normal{
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
@@ -7,11 +7,15 @@ body {
 .highlight{
     display: inline;
     box-shadow: inset 0 110px 0 #5d8ca1f1;
-    font-family: 'Leckerli one', cursive;
-    font-size: 85px;
     letter-spacing: 10px;
     line-height: 120px;
     padding: 0 20px ;
+    color: #fff
+}
+
+h1 {
+    font-family: 'Leckerli one', cursive;
+    font-size: 85px;
 }
 
 h2 {
@@ -35,20 +39,11 @@ h4 {
     background-size: 100%;
     background-attachment: relative;
     height: 770px;
-    min-width:min-content
 }
 
 .maintxt {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat, sans-serif;
-    padding-top: 65px;
-    padding-left: 50px;
-}
-
-.normal {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
+    padding-top: 120px;
+    padding-left: 30px;
 }
 
 .container-fluid {
@@ -75,7 +70,6 @@ th {
     width: 250px;
     border-radius: 10%;
 }
-
 
 .QR-img {
     width: 230px;
@@ -258,10 +252,59 @@ footer .glyphicon {
         width: 100%;
         margin-bottom: 35px;
     }
+    
+    h1 {
+        font-size: 65px;
+    }
+
+    .highlight{
+        box-shadow: inset 0 90px 0 #5d8ca1f1;
+        letter-spacing: 9px;
+        line-height: 100px;
+        padding: 0 15px ;
+    }  
+
+    .maintxt {
+        padding-top: 80px;
+        padding-left: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .highlight{
+        box-shadow: inset 0 70px 0 #5d8ca1f1;
+        letter-spacing: 7px;
+        line-height: 75px;
+        padding: 0 10px ;
+    }
+
+    .maintxt {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        font-size: 150px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .highlight{
+        box-shadow: inset 0 35px 0 #5d8ca1f1;
+        letter-spacing: 3px;
+        line-height: 40px;
+        padding: 0 8px ;
     }
 }
